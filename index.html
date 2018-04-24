@@ -20,6 +20,18 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<style>
+			.monetary-instrument {
+				color: #96858f
+			}
+			.regulated-domain {
+				color: #813772
+			}
+			.network {
+				color: #9099a2
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -30,16 +42,29 @@
 					<blockquote>
 						&ldquo;A distributed ledger is a consensus of replicated, shared, and synchronized digital data geographically spread across multiple sites, countries, or institutions. There is no central administrator or centralized data storage.&rdquo;
 					</blockquote>
+					<aside class="notes">
+						<ul>
+							<li>Definition from wikipedia</li>
+							<li>Umbrella term that includes blockchain technologies backing cryptocurrencies (such as bitcoin), other blockchain technologies (ethereum) and non-blockchain based distributed ledgers (corda)</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>Service Voucher</h2>
 					<blockquote>
-						&ldquo;Monetary instrument to facilitate public-private procurement in highly-regulated social service and health care domain through consumer empowerement.&rdquo;
+						&ldquo;<span class="monetary-instrument">Monetary instrument</span> to facilitate <span class="network">public-private procurement</span> in <span class="regulated-domain">highly-regulated</span> social service and health care domain through <span class="network">consumer empowerement</span>.&rdquo;
 					</blockquote>
+					<aside class="notes">
+						<ul>
+							<li>Constrain social services and healthcare domain to service vouchers</li>
+							<li>Definition by me</li>
+							<li>We will look at this definition from various angles</li>
+						</ul>
+					</aside>
 				</section>
-				<section>Monetary instrument -> Cryptocurrencies</section>
-				<section>Highly-regulated domain -> Smart contracts</section>
-				<section>Public - private procurement through consumer empowerment -> network of collaborators</section>
+				<section><span class="monetary-instrument">Monetary instrument</span> -> Cryptocurrencies</section>
+				<section><span class="regulated-domain">Highly-regulated domain</span> -> Smart contracts</section>
+				<section><span class="network">Public - private procurement through consumer empowerment</span> -> network of collaborators</section>
 				<section>
 					<h2>Model the domain</h2>
 					<blockquote>
